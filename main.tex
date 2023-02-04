@@ -1,0 +1,85 @@
+% \documentclass{article}
+% \usepackage[utf8]{inputenc}
+
+% \title{}
+% \author{Himanshu Behl}
+% \date{February 2023}
+
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{multicol}
+\definecolor{gold}{RGB}{255,215,0}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.0in}
+
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5.5pt}]
+
+% ----- Custom Commands -----
+\input{commands.tex}
+\begin{document}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% ----- Header Part -----
+\input{header.tex}
+
+% ----- Education -----
+\section{Education}
+\input{education.tex}
+
+% ----- Skills -----
+\section{Technical Skills}
+\input{skills.tex}
+
+% ----- Experience -----
+\section{Experience}
+\input{experience.tex}
+
+% ----- Projects -----
+\section{Projects}
+\input{projects.tex}
+
+% ----- AWARDS & ACHIEVEMENTS -----
+\section{Awards \& Achievements}
+\input{achievements.tex}
+
+\end{document}
